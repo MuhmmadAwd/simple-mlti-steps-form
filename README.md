@@ -6,7 +6,7 @@ user can navigate between tabs by clicking on the "Next" and "Previous" buttons.
 
 <div align="center">
   <h3>
-    <a href="https://muhmmadawd.github.io/simple-mlti-steps-form-/">
+    <a href="https://muhmmadawd.github.io/simple-mlti-steps-form/">
       Live Demo
     </a>
   </h3>
