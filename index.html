@@ -5,12 +5,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>simple multi-steps form</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </head>
 
 <body>
-    <h1>hello</h1>
+
+    <form id="regForm" action="">
+        <h1>Register</h1>
+
+        <!-- One "tab" for each step in the form: -->
+        <div class="tab">Name:
+            <input required name="first name" type="text" placeholder="First name...">
+            <input required name="last name" type="text" placeholder="Last name...">
+        </div>
+
+        <div class="tab">Contact Info:
+            <input required name="email" type="email" placeholder="E-mail...">
+            <input required name="phone" type="number" placeholder="Phone...">
+        </div>
+
+        <div class="tab">Birthday:
+            <input required name="date" type="date" placeholder="Date">
+            <small>you must be 18 years or more</small>
+        </div>
+
+        <div class="tab">Login Info:
+            <input required name="username" type="text" placeholder="Username...">
+            <input required name="password" type="password" placeholder="Password...">
+        </div>
+
+        <div class="btn-wrapper">
+            <button class="btn btn-primary" type="button" id="prevBtn" onclick="handleBtnClick(-1)">Previous</button>
+            <button class="btn btn-accent" type="button" id="nextBtn" onclick="handleBtnClick(1)">Next</button>
+        </div>
+
+        <!-- Circles which indicates the steps of the form: -->
+        <div class="step-list">
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+        </div>
+    </form>
+    <ul class="form-summery">
+    </ul>
     <script src="./main.js"></script>
 </body>
 
